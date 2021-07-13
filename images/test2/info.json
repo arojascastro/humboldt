@@ -1,0 +1,32 @@
+{
+  "tiles" : [ {
+    "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+    "width" : 1024,
+    "height" : 1024
+  } ],
+  "protocol" : "http://iiif.io/api/image",
+  "sizes" : [ {
+    "width" : 23,
+    "height" : 13
+  }, {
+    "width" : 45,
+    "height" : 26
+  }, {
+    "width" : 90,
+    "height" : 51
+  }, {
+    "width" : 180,
+    "height" : 102
+  }, {
+    "width" : 360,
+    "height" : 203
+  }, {
+    "width" : 720,
+    "height" : 405
+  } ],
+  "profile" : "http://iiif.io/api/image/2/level0.json",
+  "width" : 720,
+  "@id" : "https://arojascastro.github.io/humboldt/images/test2",
+  "@context" : "http://iiif.io/api/image/2/context.json",
+  "height" : 405
+}
