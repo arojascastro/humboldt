@@ -1,0 +1,96 @@
+{
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
+  "@id" : "https://arojascastro.github.io/humboldt/manifests/manifest.json",
+  "@type" : "sc:Manifest",
+  "label" : "Humboldt's favourite mountains",
+  "metadata" : [ ],
+  "description" : [ {
+    "@value" : "Two images of the favourite mountains ever visitied by Alexander von Humboldt",
+    "@language" : "en"
+  } ],
+  "license" : "https://creativecommons.org/licenses/by/3.0/",
+  "attribution" : "Bayerische Staatsbibliothek",
+  "sequences" : [ {
+    "@id" : "http://2d00da7e-8b9f-4706-9ea3-70c122d9058c",
+    "@type" : "sc:Sequence",
+    "label" : "Normal Sequence",
+    "canvases" : [ {
+      "@id" : "http://85ac55e2-6f1d-4725-bfb7-b0999aaa2eb2",
+      "@type" : "sc:Canvas",
+      "label" : "Umrisse der Planzengeographie",
+      "height" : 1575,
+      "width" : 2000,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://393c9a7a-0d5f-4940-9f52-30bf538695df",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00064502_00001/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00064502_00001",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
+              "formats" : [ "gif" ],
+              "supports" : [ "profileLinkHeader", "canonicalLinkHeader", "regionSquare", "rotationBy90s", "mirroring", "sizeAboveFull" ]
+            } ]
+          },
+          "height" : 1575,
+          "width" : 2000
+        },
+        "on" : "http://85ac55e2-6f1d-4725-bfb7-b0999aaa2eb2"
+      } ]
+    }, {
+      "@id" : "http://d37c93cd-ffa9-4854-8228-263802d4e24a",
+      "@type" : "sc:Canvas",
+      "label" : "Umrisse von Vulkanen aus den Cordilleren von Quito und Mexico",
+      "height" : 1500,
+      "width" : 2352,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://efd55228-a59a-475d-99e1-c33330a3871b",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://api.digitale-sammlungen.de/iiif/image/v2/bsb10059074_00027/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://api.digitale-sammlungen.de/iiif/image/v2/bsb10059074_00027",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
+              "formats" : [ "gif" ],
+              "supports" : [ "profileLinkHeader", "canonicalLinkHeader", "regionSquare", "rotationBy90s", "mirroring", "sizeAboveFull" ]
+            } ]
+          },
+          "height" : 1500,
+          "width" : 2352
+        },
+        "on" : "http://d37c93cd-ffa9-4854-8228-263802d4e24a"
+      } ]
+    } ]
+  } ],
+  "structures" : [ {
+    "@id" : "http://example.org/iiif/book1/range/r0",
+    "@type" : "sc:Range",
+    "label" : "Table of Contents",
+    "members" : [ {
+      "@id" : "http://example.org/iiif/book1/range/r1",
+      "@type" : "sc:Range",
+      "label" : "Table of Contents"
+    } ]
+  }, {
+    "@id" : "http://example.org/iiif/book1/range/r1",
+    "@type" : "sc:Range",
+    "label" : "1. Umrisse der Planzengeographie",
+    "canvases" : [ "http://85ac55e2-6f1d-4725-bfb7-b0999aaa2eb2" ]
+  }, {
+    "@id" : "http://example.org/iiif/book1/range/r1",
+    "@type" : "sc:Range",
+    "label" : "2. Umrisse von Vulkanen aus den Cordilleren von Quito und Mexico",
+    "canvases" : [ "http://d37c93cd-ffa9-4854-8228-263802d4e24a" ]
+  } ],
+  "viewingDirection" : "left-to-right"
+}
